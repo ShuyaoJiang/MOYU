@@ -1,0 +1,109 @@
+{% extends "moyuweb/base.html" %}
+
+{% block body %}
+    <br/>
+    <br/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+                     width="130" height="130"/>
+                <br/>
+                <br/>
+                <span class="badge badge-default" style="font-size:20px;">
+                    我的昵称
+                </span>
+                <br/>
+                <br/>
+                <span style="font-size:20px;color:darkgoldenrod;">
+                    <strong>✏️个人信息管理</strong>
+                </span>
+                <br/>
+                <br/>
+                <div class="list-group" id="list-tab" role="tablist" style="width:150px;">
+                    <a class="list-group-item list-group-item-light list-group-item-action" data-toggle="list"
+                       href="#">
+                        基本资料
+                    </a>
+                    <a class="list-group-item list-group-item-light list-group-item-action" data-toggle="list"
+                       href="#">
+                        联系方式
+                    </a>
+                    <a class="list-group-item list-group-item-warning list-group-item-action active" data-toggle="list"
+                       href="#">
+                        修改密码
+                    </a>
+                </div>
+                </br>
+            </div>
+            <div class="col-md-8">
+                <div class="page-header">
+                    <h2>
+                        修改密码
+                    </h2>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <br>
+                            <h5 style="color: darkgoldenrod">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                亲爱的 XXX，请牢记自己的密码哦～
+                            </h5>
+                            <br>
+                            <form action="" enctype="multipart/form-data">
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="oldPwd">
+                                        <strong>
+                                            * 原密码：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="oldPwd" type="password" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="newPwd">
+                                        <strong>
+                                            * 新密码：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" id="newPwd" type="password" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="confirmPwd">
+                                        <strong>
+                                            * 确认新密码：
+                                        </strong>
+                                    </label>
+                                    <input class="form-control" id="confirm" type="password" style="width: 300px;">
+                                </div>
+                                <br>
+                                <hr>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn btn-warning" style="width:100px;" type="submit">
+                                    保存
+                                </button>
+                                <br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+{% endblock %}

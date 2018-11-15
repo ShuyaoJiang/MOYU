@@ -70,3 +70,27 @@ def me_transaction(request):
     context = {}
     context["title"] = "me_transaction"
     return render(request, "moyuweb/me_transaction.html", context)
+
+
+def me_favorites(request):
+    context = {}
+    context["title"] = "me_favorites"
+    return render(request, "moyuweb/me_favorites.html", context)
+
+
+def myInfo_base(request):
+    context = {}
+    context["title"] = "myInfo_base"
+    return render(request, "moyuweb/myInfo_base.html", context)
+
+
+def myInfo_contact(request):
+    context = {}
+    context["title"] = "myInfo_contact"
+    return render(request, "moyuweb/myInfo_contact.html", context)
+
+
+def myInfo_changePwd(request):
+    context = {}
+    context["title"] = "myInfo_changePwd"
+    return render(request, "moyuweb/myInfo_changePwd.html", context)

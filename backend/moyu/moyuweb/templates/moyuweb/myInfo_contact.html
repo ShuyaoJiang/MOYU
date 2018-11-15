@@ -1,0 +1,179 @@
+{% extends "moyuweb/base.html" %}
+
+{% block body %}
+    <br/>
+    <br/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+                     width="130" height="130"/>
+                <br/>
+                <br/>
+                <span class="badge badge-default" style="font-size:20px;">
+                    我的昵称
+                </span>
+                <br/>
+                <br/>
+                <span style="font-size:20px;color:darkgoldenrod;">
+                    <strong>✏️个人信息管理</strong>
+                </span>
+                <br/>
+                <br/>
+                <div class="list-group" id="list-tab" role="tablist" style="width:150px;">
+                    <a class="list-group-item list-group-item-light list-group-item-action" data-toggle="list"
+                       href="#">
+                        基本资料
+                    </a>
+                    <a class="list-group-item list-group-item-warning list-group-item-action active" data-toggle="list"
+                       href="#">
+                        联系方式
+                    </a>
+                    <a class="list-group-item list-group-item-light list-group-item-action" data-toggle="list"
+                       href="#">
+                        修改密码
+                    </a>
+                </div>
+                </br>
+            </div>
+            <div class="col-md-8">
+                <div class="page-header">
+                    <h2>
+                        联系方式
+                    </h2>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <br>
+                            <h5 style="color: darkgoldenrod">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                亲爱的 XXX，请务必确保联系方式真实有效哦～
+                            </h5>
+                            <br>
+                            <form action="" enctype="multipart/form-data">
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="mobile">
+                                        <strong>
+                                            * 手机号：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="mobile" type="text" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="email">
+                                        <strong>
+                                            * 电子邮箱：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" id="email" type="email" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="wechat">
+                                        <strong>
+                                            微信号：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="wechat" type="text" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="home">
+                                        <strong>
+                                            固定电话：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="home" type="text" style="width: 300px;">
+                                </div>
+                                <hr>
+                                <h5 style="color: darkgoldenrod">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    收货地址
+                                </h5>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="address">
+                                        <strong>
+                                            * 地址信息：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="year" type="text" style="width: 150px;">
+                                    <label for="year">&nbsp;省&nbsp;&nbsp;&nbsp;</label>
+                                    <input class="form-control" id="month" type="text" style="width: 150px;">
+                                    <label for="month">&nbsp;市&nbsp;&nbsp;&nbsp;</label>
+                                    <input class="form-control" id="day" type="text" style="width: 150px;">
+                                    <label for="day">&nbsp;区&nbsp;&nbsp;&nbsp;</label>
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="detialAdd">
+                                        <strong>
+                                            * 详细地址：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" id="detialAdd" type="text"
+                                           placeholder="请输入详细地址信息，如街道、门牌号、小区、楼栋号、单元等信息"
+                                           style="width: 600px;">
+                                </div>
+                                <p class="help-block" style="color:red;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    * 请填写详细地址信息
+                                </p>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="postNumber">
+                                        <strong>
+                                            邮政编码：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" id="postNumber" type="number" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="receiver">
+                                        <strong>
+                                            * 收货人姓名：
+                                        </strong>
+                                    </label>
+                                    <input class="form-control" id="receiver" type="text" style="width: 300px;">
+                                </div>
+                                <br>
+                                <hr>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn btn-warning" style="width:100px;" type="submit">
+                                    保存
+                                </button>
+                                <br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+{% endblock %}

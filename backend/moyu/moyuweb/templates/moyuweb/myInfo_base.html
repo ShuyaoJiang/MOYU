@@ -1,0 +1,172 @@
+{% extends "moyuweb/base.html" %}
+
+{% block body %}
+    <br/>
+    <br/>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-2">
+                <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg"
+                     width="130" height="130"/>
+                <br/>
+                <br/>
+                <span class="badge badge-default" style="font-size:20px;">
+                    我的昵称
+                </span>
+                <br/>
+                <br/>
+                <span style="font-size:20px;color:darkgoldenrod;">
+                    <strong>✏️个人信息管理</strong>
+                </span>
+                <br/>
+                <br/>
+                <div class="list-group" id="list-tab" role="tablist" style="width:150px;">
+                    <a class="list-group-item list-group-item-warning list-group-item-action active" data-toggle="list"
+                       href="#">
+                        基本资料
+                    </a>
+                    <a class="list-group-item list-group-item-light list-group-item-action" data-toggle="list"
+                       href="#">
+                        联系方式
+                    </a>
+                    <a class="list-group-item list-group-item-light list-group-item-action" data-toggle="list"
+                       href="#">
+                        修改密码
+                    </a>
+                </div>
+                </br>
+            </div>
+            <div class="col-md-8">
+                <div class="page-header">
+                    <h2>
+                        基本资料
+                    </h2>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <br>
+                            <h5 style="color:darkgoldenrod">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                亲爱的 XXX，完善个人信息，有助于更多人找到你哦～
+                            </h5>
+                            <br>
+                            <form action="" enctype="multipart/form-data">
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="photo">
+                                        <strong>
+                                            我的头像：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <img src="" id="show" width="150" height="150">
+                                    <input id="photo" onchange="changePhoto(this)" type="file"
+                                           class="form-control-file">
+                                    &nbsp;&nbsp;&nbsp;
+                                    <label for="photo" class="btn btn-warning">选择头像</label>
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="nickName">
+                                        <strong>
+                                            * 昵称：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="nickName" type="text" style="width: 300px;">
+                                </div>
+                                <p class="help-block" style="color:gray;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    * 昵称填写须知：与闲鱼业务或卖家品牌冲突的昵称，闲鱼将有可能收回
+                                </p>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="realName">
+                                        <strong>
+                                            真实姓名：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" id="realName" type="text" style="width: 300px;">
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="sex">
+                                        <strong>
+                                            * 性别：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <span>
+                                    <label class="radio-inline">
+                                        <input name="radio" type="radio">男
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input name="radio" type="radio">女
+                                    </label>
+                                </span>
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="birthday">
+                                        <strong>
+                                            生日：
+                                        </strong>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </label>
+                                    <input class="form-control" id="year" type="number" style="width: 150px;">
+                                    <label for="year">&nbsp;年&nbsp;&nbsp;&nbsp;</label>
+                                    <input class="form-control" id="month" type="number" style="width: 150px;">
+                                    <label for="month">&nbsp;月&nbsp;&nbsp;&nbsp;</label>
+                                    <input class="form-control" id="day" type="number" style="width: 150px;">
+                                    <label for="day">&nbsp;日&nbsp;&nbsp;&nbsp;</label>
+                                </div>
+                                <br>
+                                <div class="form-inline">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label for="location">
+                                        <strong>
+                                            所在地：
+                                        </strong>
+                                    </label>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input class="form-control" id="location" type="text" style="width: 300px;">
+                                </div>
+                                <br>
+                                <hr>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <button class="btn btn-warning" style="width:100px;" type="submit">
+                                    保存
+                                </button>
+                                <br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <script>
+        function changePhoto() {
+            var reads = new FileReader();
+            f = document.getElementById('photo').files[0];
+            reads.readAsDataURL(f);
+            reads.onload = function () {
+                document.getElementById('show').src = this.result;
+            };
+        }
+    </script>
+{% endblock %}
